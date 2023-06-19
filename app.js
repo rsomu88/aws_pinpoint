@@ -3,14 +3,14 @@ const express = require('express');
 require('express-async-await'); 
 const pinpoint = new AWS.Pinpoint({
     region: 'us-east-2',
-    accessKeyId: 'AKIAX45MY3KT3UWBVEUH',
-    secretAccessKey: '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'
+    accessKeyId: '',
+    secretAccessKey: ''
 }
 );
 
 console.log("pinpoint object:"+pinpoint);
 /* const smsParams={
-    ApplicationId: 'ecf4a35474524d0d8b22c74cb7bb5c32',
+    ApplicationId: '',
   MessageRequest: {
     MessageConfiguration: {
       SMSMessage: {
@@ -108,7 +108,7 @@ pinpoint.getEmailChannel({ ...emailAnalyticsParams }, (err, data) => {
 
 const getUsageReports = async () => {
   const params = {
-      ApplicationId: '2ec1e03cc2274792a299069d8757056f'
+      ApplicationId: ''
   };
 
   try {
